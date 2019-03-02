@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/text_numero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Numero 1"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_suma"
+        app:layout_constraintEnd_toStartOf="@+id/edit_numero"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <EditText
+        android:id="@+id/edit_numero"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/text_numero2"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/text_numero2"
+        android:layout_width="83dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:text="Numero 2"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/edit_numero02"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <EditText
+        android:id="@+id/edit_numero02"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_numero2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/edit_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <Button
+        android:id="@+id/button_suma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="Sumar"
+        android:text="@string/suma"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button_resta"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <Button
+        android:id="@+id/button_resta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="Restar"
+        android:text="@string/resta"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button_multiplicacion"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <Button
+        android:id="@+id/button_multiplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="Multiplicar"
+        android:text="@string/multiplicacion"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <Button
+        android:id="@+id/button_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="Dividir"
+        android:text="@string/division"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bu_modulo"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_suma"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <Button
+        android:id="@+id/bu_modulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="116dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="Modu1o"
+        android:text="@string/modulo"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+</android.support.constraint.ConstraintLayout>

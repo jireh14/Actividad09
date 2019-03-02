@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="division">Division</string>
+    <string name="suma">SUMA</string>
+    <string name="modulo">MODULO</string>
+    <string name="resta">RESTA</string>
+    <string name="multiplicacion">Multiplicacion</string>
+</resources>
